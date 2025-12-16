@@ -87,15 +87,18 @@ form button:hover {
     align-items: center;
     padding: 20px;
     font-size: .55rem;
+    font-weight: bold;
 }
 .peso-normal {
-    background-color: rgb(120, 224, 72);
+    background-color: rgb(70, 145, 35);
+    color: #ffffff;
 }
 .peso-atencao {
-    background-color: rgb(238, 203, 7);
+    background-color: rgb(212, 181, 0);
+    color: #161616;
 }
 .obesidade-1{
-    background-color: rgb(245, 118, 0);
+    background-color: rgb(255, 145, 0);
     color: #ffffff;
 }
 .obesidade-2{
@@ -148,7 +151,7 @@ form button:hover {
         padding: 0 20px;
     }
     .resultado {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 @media screen and (min-width: 576px){
