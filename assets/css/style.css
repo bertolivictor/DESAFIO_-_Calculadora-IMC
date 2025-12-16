@@ -43,6 +43,9 @@ body {
 .legenda p {
     font-size: 0.55rem;
 }
+.div-imc h2 {
+    text-align: start;
+}
 #paragrafo-1 {
     border-right: 1px solid #000000;
     padding-right: .5rem;
