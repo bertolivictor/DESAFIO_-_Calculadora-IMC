@@ -80,9 +80,13 @@ form button:hover {
 }
 .resultado {
     display: flex;
+    justify-content: center;
     height: 50px;
+    width: 100%;
+    max-width: 336px;
     align-items: center;
     padding: 20px;
+    font-size: .55rem;
 }
 .peso-normal {
     background-color: rgb(120, 224, 72);
@@ -121,6 +125,9 @@ form button:hover {
     .legenda h2 {
         font-size: 1.5rem;
     }
+    .resultado {
+        font-size: .9rem;
+    }
 }
 @media screen and (min-width: 420px){
     .container {
@@ -139,6 +146,9 @@ form button:hover {
     form input {
         height: 50px;
         padding: 0 20px;
+    }
+    .resultado {
+        font-size: 1.2rem;
     }
 }
 @media screen and (min-width: 576px){
