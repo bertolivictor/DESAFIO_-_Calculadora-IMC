@@ -34,18 +34,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 .legenda h2 {
     text-align: center;
     font-size: 15px;
 }
 .legenda p {
-    font-size: 0.65rem;
+    font-size: 0.55rem;
 }
 #paragrafo-1 {
     border-right: 1px solid #000000;
-    padding-right: 1rem;
+    padding-right: .5rem;
 
 }
 form input, form label, form button {
@@ -101,8 +101,14 @@ form button:hover {
     color: #ffffff;
 }
 @media screen and (min-width: 280px){
+    .legenda {
+        gap: 1rem;
+    }
     .legenda p {
         font-size: 0.8rem;
+    }
+    #paragrafo-1 {
+        padding-right: 1rem;
     }
 }
 @media screen and (min-width: 330px){
@@ -121,9 +127,6 @@ form button:hover {
     }
     .container h1 {
         font-size: 2.5rem;
-    }
-    #paragrafo-1 {
-        padding-right: 8px;
     }
     form input, form label, form button {
         max-width: 50rem;
@@ -144,8 +147,5 @@ form button:hover {
     }
     .legenda p {
         font-size: 1.5rem;
-    }
-    #paragrafo-1 {
-        padding-right: 10px;
     }
 }
