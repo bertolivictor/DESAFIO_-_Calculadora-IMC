@@ -16,25 +16,47 @@ body {
     line-height: 1.5em;
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #ffffff;
-    max-width: 640px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 25rem;
+    margin: 15px auto;
+    padding: 10px;
     border-radius: 1rem;
 
 }
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+}
 .legenda {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+.legenda h2 {
+    text-align: center;
+    font-size: 15px;
+}
+.legenda p {
+    font-size: 0.65rem;
+}
+#paragrafo-1 {
+    border-right: 1px solid #000000;
+    padding-right: 1rem;
+
 }
 form input, form label, form button {
     display: block;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 form input {
     font-size: 24px;
-    height: 50px;
+    height: 30px;
     padding: 0 20px;
 }
 form input:focus {
@@ -48,7 +70,7 @@ form button {
     font-weight: bold;
     height: 50px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 form button:hover {
     background-color: var(--primary-color-darker);
@@ -77,4 +99,53 @@ form button:hover {
 .obesidade-3{
     background-color: rgb(255, 0, 0);
     color: #ffffff;
+}
+@media screen and (min-width: 280px){
+    .legenda p {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 330px){
+    .legenda p {
+        font-size: 1rem;
+    }
+    .legenda h2 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 420px){
+    .container {
+        max-width: 50rem;
+        width: 95%;
+
+    }
+    .container h1 {
+        font-size: 2.5rem;
+    }
+    #paragrafo-1 {
+        padding-right: 8px;
+    }
+    form input, form label, form button {
+        max-width: 50rem;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    form input {
+        height: 50px;
+        padding: 0 20px;
+    }
+}
+@media screen and (min-width: 576px){
+    .legenda div {
+        padding: 0 auto;
+    }
+    .legenda h2 {
+        font-size: 2rem;
+    }
+    .legenda p {
+        font-size: 1.5rem;
+    }
+    #paragrafo-1 {
+        padding-right: 10px;
+    }
 }
